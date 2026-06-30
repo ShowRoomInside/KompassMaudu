@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Resmi KOMPASS (Kompetisi Agama, Sains, dan Seni) yang diadakan oleh Madrasah Aliyah Unggulan Darul 'Ulum. Daftarkan diri Anda sekarang!">
+    <meta name="keywords" content="KOMPASS, MA Unggulan Darul Ulum, Kompetisi Agama Sains Seni, Pendaftaran Lomba, Darul Ulum Jombang">
+    <meta name="author" content="MA Unggulan Darul 'Ulum">
+    <title>KOMPASS 2026 | Kompetisi Agama, Sains, dan Seni - MA Unggulan Darul 'Ulum</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Target untuk Navbar Scroll Effect -->
+    <div id="top"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#top" class="logo">
+                <img src="logo-mau.png" alt="Logo MA Unggulan Darul 'Ulum" class="navbar-logo-img logo-mau">
+                <div class="logo-divider"></div>
+                <img src="logo-kompass.png" alt="Logo KOMPASS" class="navbar-logo-img logo-kompass">
+                <div class="logo-text">
+                    <span class="logo-title">KOMPASS 2026</span>
+                    <span class="logo-subtitle">MA Unggulan Darul 'Ulum</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#profil" class="nav-link">Profil</a>
+                <a href="#lomba" class="nav-link">Cabang Lomba</a>
+                <a href="#jadwal" class="nav-link">Jadwal</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+                <a href="daftar.html" class="btn btn-secondary nav-cta-mobile">Daftar Sekarang</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button id="btn-login-admin" class="btn btn-primary nav-cta">Login Admin</button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-brand-logos animate-fade-in">
+                    <img src="logo-mau.png" alt="MA Unggulan Darul 'Ulum" class="hero-logo logo-mau">
+                    <img src="logo-kompass.png" alt="KOMPASS" class="hero-logo logo-kompass">
+                </div>
+                <div class="badge animate-fade-in">Pendaftaran Telah Dibuka!</div>
+                <h1 class="hero-title animate-slide-up">
+                    Kompetisi Agama, Sains, dan Seni <span class="highlight">KOMPASS 2026</span>
+                </h1>
+                <p class="hero-subtitle animate-slide-up-delay-1">
+                    Kembangkan Potensi, Raih Prestasi Gemilang tingkat SMP/MTs Sederajat se-Jawa Timur & Bali bersama Madrasah Aliyah Unggulan Darul 'Ulum Jombang.
+                </p>
+                <div class="hero-actions animate-slide-up-delay-2">
+                    <a href="daftar.html" class="btn btn-primary btn-lg">Daftar Sekarang</a>
+                    <a href="#lomba" class="btn btn-outline btn-lg">Lihat Cabang Lomba</a>
+                </div>
+            </div>
+            
+            <div class="hero-stats animate-fade-in-delay-3">
+                <div class="stat-card">
+                    <span class="stat-number" id="stat-lomba-count">7+</span>
+                    <span class="stat-label">Cabang Lomba</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="stat-hadiah-total">Rp 30 Juta</span>
+                    <span class="stat-label">Total Hadiah & Beasiswa</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="stat-peserta-count">500+</span>
+                    <span class="stat-label">Pendaftar Terdaftar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil" class="profil section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Profil KOMPASS</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Mengenal lebih dekat Kompetisi Agama, Sains, dan Seni MA Unggulan Darul 'Ulum Rejoso Peterongan Jombang.</p>
+            </div>
+
+            <div class="profil-grid">
+                <div class="profil-text">
+                    <h3>Menempa Generasi Unggul Berkarakter</h3>
+                    <p>KOMPASS 2026 merupakan ajang kompetisi tahunan bergengsi tingkat SMP/MTs sederajat se-Jawa dan Bali yang diselenggarakan oleh <strong>Madrasah Aliyah Unggulan Darul 'Ulum</strong> Jombang di bawah naungan Pondok Pesantren Darul 'Ulum Rejoso.</p>
+                    <p>Melalui perpaduan kompetisi <strong>Agama</strong> untuk memperkokoh spiritualitas, <strong>Sains</strong> untuk mengasah kecerdasan intelektual, serta <strong>Seni</strong> untuk menumbuhkan kreativitas, KOMPASS hadir sebagai panggung bagi para siswa berprestasi untuk mengaktualisasikan potensi terbaik mereka.</p>
+                    
+                    <div class="benefit-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Sertifikat Resmi</strong>
+                                <p>Sertifikat tingkat provinsi/regional yang berguna untuk jalur prestasi akademik/non-akademik.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Uang Pembinaan & Piala Bergilir</strong>
+                                <p>Total hadiah puluhan juta rupiah beserta piala bergilir bergengsi.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Golden Ticket Beasiswa</strong>
+                                <p>Kesempatan masuk MA Unggulan Darul 'Ulum dengan beasiswa penuh bagi pemenang utama.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profil-visual">
+                    <div class="visual-card">
+                        <div class="visual-glow"></div>
+                        <div class="visual-content">
+                            <img src="logo-mau.png" alt="Logo MA Unggulan Darul 'Ulum" class="profile-campus-logo">
+                            <h4>MA Unggulan Darul 'Ulum</h4>
+                            <p class="campus-sub">Center of Excellence & Akhlaqul Karimah</p>
+                            <div class="campus-stats">
+                                <div class="c-stat">
+                                    <strong>A</strong>
+                                    <span>Akreditasi</span>
+                                </div>
+                                <div class="c-stat">
+                                    <strong>100%</strong>
+                                    <span>Berwawasan Pesantren</span>
+                                </div>
+                            </div>
+                            <div class="campus-location">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Rejoso, Peterongan, Jombang, Jawa Timur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cabang Lomba Section -->
+    <section id="lomba" class="lomba section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Cabang Lomba</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Pilih cabang lomba yang sesuai dengan bakat dan minat terbaikmu.</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="semua">Semua Lomba</button>
+                <button class="filter-btn" data-category="agama">Agama</button>
+                <button class="filter-btn" data-category="sains">Sains</button>
+                <button class="filter-btn" data-category="seni">Seni</button>
+            </div>
+
+            <!-- Lomba Grid -->
+            <div class="lomba-grid" id="lomba-grid">
+                
+                <!-- Lomba 1: Agama -->
+                <div class="lomba-card" data-category="agama">
+                    <div class="lomba-card-badge">Agama</div>
+                    <div class="lomba-card-content">
+                        <h3>Musabaqah Qiraatul Kutub (MQK)</h3>
+                        <p class="lomba-desc">Kompetisi membaca kitab kuning klasik Fathul Qorib secara fasih, memahami nahu-shorof serta menerangkan isinya.</p>
+                        <div class="lomba-details">
+                            <span><strong>Biaya:</strong> Rp 50.000 / Orang</span>
+                            <span><strong>Kategori:</strong> Individu</span>
+                        </div>
+                        <button class="btn btn-outline btn-block btn-detail" data-lomba="mqk">Detail & Syarat</button>
+                    </div>
+                </div>
+
+                <!-- Lomba 2: Agama -->
+                <div class="lomba-card" data-category="agama">
+                    <div class="lomba-card-badge">Agama</div>
+                    <div class="lomba-card-content">
+                        <h3>Cerdas Cermat Islam (CCI)</h3>
+                        <p class="lomba-desc">Kompetisi beregu (3 siswa) menguji kecepatan dan ketepatan wawasan keislaman secara komprehensif.</p>
+                        <div class="lomba-details">
+                            <span><strong>Biaya:</strong> Rp 75.000 / Tim</span>
+                            <span><strong>Kategori:</strong> Tim (3 Orang)</span>
+                        </div>
+                        <button class="btn btn-outline btn-block btn-detail" data-lomba="cci">Detail & Syarat</button>
+                    </div>
+                </div>
+
+                <!-- Lomba 3: Agama -->
+                <div class="lomba-card" data-category="agama">
+                    <div class="lomba-card-badge">Agama</div>
+                    <div class="lomba-card-content">
+                        <h3>Kompetisi Da'i Muda (KDM)</h3>
+                        <p class="lomba-desc">Lomba ceramah/dakwah islami bertema moral pemuda dan persatuan umat secara komunikatif dan persuasif.</p>
+                        <div class="lomba-details">
+                            <span><strong>Biaya:</strong> Rp 50.000 / Orang</span>
+                            <span><strong>Kategori:</strong> Individu</span>
+                        </div>
+                        <button class="btn btn-outline btn-block btn-detail" data-lomba="kdm">Detail & Syarat</button>
+                    </div>
+                </div>
+
+                <!-- Lomba 4: Sains -->
+                <div class="lomba-card" data-category="sains">
+                    <div class="lomba-card-badge">Sains</div>
+                    <div class="lomba-card-content">
+                        <h3>Olimpiade Matematika</h3>
+                        <p class="lomba-desc">Uji analisis matematika, logika numerik, aljabar, dan geometri tingkat lanjut SMP/MTs sederajat.</p>
+                        <div class="lomba-details">
+                            <span><strong>Biaya:</strong> Rp 50.000 / Orang</span>
+                            <span><strong>Kategori:</strong> Individu</span>
+                        </div>
+                        <button class="btn btn-outline btn-block btn-detail" data-lomba="matematika">Detail & Syarat</button>
+                    </div>
+                </div>
+
+                <!-- Lomba 5: Sains -->
+                <div class="lomba-card" data-category="sains">
+                    <div class="lomba-card-badge">Sains</div>
+                    <div class="lomba-card-content">
+                        <h3>Olimpiade IPA Terpadu</h3>
+                        <p class="lomba-desc">Asah pemahaman sains komprehensif meliputi materi Biologi, Fisika, dan konsep Kimia dasar.</p>
+                        <div class="lomba-details">
+                            <span><strong>Biaya:</strong> Rp 50.000 / Orang</span>
+                            <span><strong>Kategori:</strong> Individu</span>
+                        </div>
+                        <button class="btn btn-outline btn-block btn-detail" data-lomba="ipa">Detail & Syarat</button>
+                    </div>
+                </div>
+
+                <!-- Lomba 6: Seni -->
+                <div class="lomba-card" data-category="seni">
+                    <div class="lomba-card-badge">Seni</div>
+                    <div class="lomba-card-content">
+                        <h3>Kompetisi Kaligrafi Lukis (KKL)</h3>
+                        <p class="lomba-desc">Tunjukkan bakat seni melukis kaligrafi kontemporer di atas kanvas dengan komposisi ornamen yang indah.</p>
+                        <div class="lomba-details">
+                            <span><strong>Biaya:</strong> Rp 50.000 / Orang</span>
+                            <span><strong>Kategori:</strong> Individu</span>
+                        </div>
+                        <button class="btn btn-outline btn-block btn-detail" data-lomba="kkl">Detail & Syarat</button>
+                    </div>
+                </div>
+
+                <!-- Lomba 7: Seni -->
+                <div class="lomba-card" data-category="seni">
+                    <div class="lomba-card-badge">Seni</div>
+                    <div class="lomba-card-content">
+                        <h3>Cipta & Baca Puisi</h3>
+                        <p class="lomba-desc">Kompetisi menuangkan gagasan orisinal ke dalam puisi secara on-the-spot dan deklamasi di hadapan juri.</p>
+                        <div class="lomba-details">
+                            <span><strong>Biaya:</strong> Rp 50.000 / Orang</span>
+                            <span><strong>Kategori:</strong> Individu</span>
+                        </div>
+                        <button class="btn btn-outline btn-block btn-detail" data-lomba="puisi">Detail & Syarat</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / Jadwal Section -->
+    <section id="jadwal" class="jadwal section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Timeline Kegiatan</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Catat tanggal-tanggal penting agar kamu tidak melewatkan kesempatan emas ini.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">1 Juli - 15 Agustus 2026</div>
+                    <div class="timeline-content">
+                        <h3>Pendaftaran Gelombang 1</h3>
+                        <p>Pendaftaran awal dengan biaya hemat khusus untuk pendaftar gelombang pertama.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">16 Agustus - 10 September 2026</div>
+                    <div class="timeline-content">
+                        <h3>Pendaftaran Gelombang 2</h3>
+                        <p>Pendaftaran gelombang reguler. Pengumpulan berkas persyaratan dan administrasi.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">12 September 2026</div>
+                    <div class="timeline-content">
+                        <h3>Technical Meeting (TM)</h3>
+                        <p>Penjelasan teknis pelaksanaan kompetisi, pembacaan regulasi, dan pembagian nomor urut.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">19 - 20 September 2026</div>
+                    <div class="timeline-content">
+                        <h3>Pelaksanaan Lomba</h3>
+                        <p>Babak penyisihan dan final yang diselenggarakan secara langsung di kampus MA Unggulan Darul 'Ulum.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">21 September 2026</div>
+                    <div class="timeline-content">
+                        <h3>Pengumuman & Awarding</h3>
+                        <p>Pengumuman pemenang, penyerahan piala penghargaan, uang pembinaan, dan seremonial Golden Ticket.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Punya pertanyaan seputar kompetisi? Temukan jawabannya di bawah ini.</p>
+            </div>
+
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Siapa saja yang boleh mengikuti kompetisi KOMPASS 2026?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kompetisi ini terbuka untuk seluruh siswa-siswi tingkat SMP, MTs, dan sederajat yang aktif di wilayah Jawa Timur dan Bali.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah boleh mendaftar lebih dari satu cabang lomba?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Setiap siswa hanya diperbolehkan mendaftar maksimal 1 (satu) cabang lomba per individu untuk menghindari bentrok jadwal pelaksanaan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimana alur pembayaran biaya pendaftaran?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Biaya pendaftaran ditransfer ke rekening Bank BSI resmi MA Unggulan Darul 'Ulum. Bukti transfer tersebut wajib diunggah pada formulir pendaftaran digital.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Kapan pengumuman hasil perlombaan dilakukan?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pengumuman pemenang dan penyerahan hadiah (Awarding) akan dilaksanakan secara offline di Kampus MA Unggulan Darul 'Ulum pada tanggal 21 September 2026.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimana cara mengunduh juknis perlombaan?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Anda dapat melihat petunjuk teknis singkat (Juknis) dengan mengklik tombol "Detail & Syarat" di setiap kartu lomba pada bagian cabang lomba.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hubungi Kami & Peta Section -->
+    <section id="kontak" class="kontak section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">Ada kesulitan atau pertanyaan lebih lanjut? Jangan ragu hubungi tim kami.</p>
+            </div>
+
+            <div class="kontak-grid">
+                <div class="kontak-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="info-details">
+                            <h4>Hubungi CS Lomba</h4>
+                            <p><a href="https://wa.me/628123456789" target="_blank" rel="noopener noreferrer">+62 812-3456-789 (Ustadz Fauzan)</a></p>
+                            <p><a href="https://wa.me/628987654321" target="_blank" rel="noopener noreferrer">+62 898-7654-321 (Ustadzah Aminah)</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-details">
+                            <h4>Surel Resmi</h4>
+                            <p><a href="mailto:kompass@mau-du.sch.id">kompass@mau-du.sch.id</a></p>
+                            <p><a href="mailto:info@mau-du.sch.id">info@mau-du.sch.id</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-details">
+                            <h4>Lokasi Kampus</h4>
+                            <p>Jl. KH. Rejoso, Peterongan, Kabupaten Jombang, Jawa Timur, Kode Pos 61481</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kontak-map">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.262034799693!2d112.27096627614576!3d-7.544369460606491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e785c3a4e5dd32d%3A0x5f5c6e5a4b5e5e5e!2sMA%20Unggulan%20Darul%20%27Ulum!5e0!3m2!1sid!2sid!4v1751236000000!5m2!1sid!2sid" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="logo-mau.png" alt="Logo MAU" class="footer-logo-img logo-mau">
+                    <img src="logo-kompass.png" alt="Logo KOMPASS" class="footer-logo-img logo-kompass">
+                    <span>KOMPASS 2026</span>
+                </div>
+                <p>Mencetak generasi unggul dalam naungan akhlak mulia dan kompetensi tanpa batas.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#lomba">Cabang Lomba</a></li>
+                    <li><a href="#jadwal">Jadwal</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Media Sosial</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    </a>
+                    <a href="#" aria-label="Website">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 MA Unggulan Darul 'Ulum Jombang. All Rights Reserved. Designed for KOMPASS.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Lomba Detail -->
+    <div id="lomba-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login Admin -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content" style="max-width: 400px; padding: 32px;">
+            <span class="modal-close" id="close-login">&times;</span>
+            <h3 class="modal-title" style="margin-bottom: 24px; text-align: center;">Login Administrator</h3>
+            <form id="login-form">
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label for="admin-username" style="font-weight: 600; font-size: 0.9rem; color: var(--text-secondary);">Username</label>
+                    <input type="text" id="admin-username" required placeholder="admin" style="padding: 12px; border: 1.5px solid var(--border-color); border-radius: var(--radius-sm); outline: none; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); width: 100%;">
+                </div>
+                <div class="form-group" style="margin-bottom: 24px;">
+                    <label for="admin-password" style="font-weight: 600; font-size: 0.9rem; color: var(--text-secondary);">Password</label>
+                    <input type="password" id="admin-password" required placeholder="••••••••" style="padding: 12px; border: 1.5px solid var(--border-color); border-radius: var(--radius-sm); outline: none; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); width: 100%;">
+                </div>
+                <span class="error-msg" id="login-error" style="display: block; margin-bottom: 16px; color: #ef4444; font-size: 0.85rem; font-weight: 600; text-align: center;"></span>
+                <button type="submit" class="btn btn-primary btn-block">Masuk Ke Dashboard</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Admin Overlay -->
+    <div id="admin-dashboard" class="admin-dashboard-overlay" style="display: none;">
+        <div class="dashboard-container">
+            <header class="dashboard-header">
+                <div class="db-title-block">
+                    <h2>Panel Kontrol Admin</h2>
+                    <span class="db-subtitle">KOMPASS 2026 | MA Unggulan Darul 'Ulum</span>
+                </div>
+                <div class="db-actions">
+                    <button class="btn btn-outline" id="btn-logout-admin">Logout</button>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Sidebar/Config Panel -->
+                <aside class="dashboard-sidebar">
+                    <h3>Statistik & Tampilan Website</h3>
+                    <form id="config-form" style="margin-top: 16px; display: flex; flex-direction: column; gap: 16px;">
+                        <div class="form-group">
+                            <label for="cfg-lomba-count">Jumlah Cabang Lomba</label>
+                            <input type="text" id="cfg-lomba-count" required value="7+">
+                        </div>
+                        <div class="form-group">
+                            <label for="cfg-hadiah-total">Total Hadiah & Beasiswa</label>
+                            <input type="text" id="cfg-hadiah-total" required value="Rp 30 Juta">
+                        </div>
+                        <div class="form-group">
+                            <label for="cfg-base-peserta">Offset Pendaftar Terdaftar</label>
+                            <input type="number" id="cfg-base-peserta" required value="500">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Simpan Perubahan</button>
+                    </form>
+                </aside>
+
+                <!-- Data Table Panel -->
+                <main class="dashboard-main">
+                    <h3>Daftar Peserta Terdaftar</h3>
+                    <div class="table-wrapper">
+                        <table class="db-table">
+                            <thead>
+                                <tr>
+                                    <th>No. Peserta</th>
+                                    <th>Nama Lengkap</th>
+                                    <th>Asal Sekolah</th>
+                                    <th>WhatsApp</th>
+                                    <th>Cabang Lomba</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="participants-table-body">
+                                <!-- Dynamic rows injected via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Participant Modal -->
+    <div id="edit-participant-modal" class="modal">
+        <div class="modal-content" style="max-width: 500px; padding: 32px;">
+            <span class="modal-close" id="close-edit-modal">&times;</span>
+            <h3 class="modal-title" style="margin-bottom: 24px; text-align: center;">Edit Data Peserta</h3>
+            <form id="edit-participant-form" style="display: flex; flex-direction: column; gap: 16px;">
+                <input type="hidden" id="edit-part-id">
+                <div class="form-group">
+                    <label for="edit-part-name">Nama Lengkap</label>
+                    <input type="text" id="edit-part-name" required style="padding: 12px; border: 1.5px solid var(--border-color); border-radius: var(--radius-sm); outline: none; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); width: 100%;">
+                </div>
+                <div class="form-group">
+                    <label for="edit-part-school">Asal Sekolah</label>
+                    <input type="text" id="edit-part-school" required style="padding: 12px; border: 1.5px solid var(--border-color); border-radius: var(--radius-sm); outline: none; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); width: 100%;">
+                </div>
+                <div class="form-group">
+                    <label for="edit-part-whatsapp">WhatsApp</label>
+                    <input type="tel" id="edit-part-whatsapp" required style="padding: 12px; border: 1.5px solid var(--border-color); border-radius: var(--radius-sm); outline: none; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); width: 100%;">
+                </div>
+                <div class="form-group">
+                    <label for="edit-part-status">Status Verifikasi</label>
+                    <select id="edit-part-status" required style="padding: 12px; border: 1.5px solid var(--border-color); border-radius: var(--radius-sm); outline: none; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); width: 100%;">
+                        <option value="Pending">Pending</option>
+                        <option value="Disetujui">Disetujui</option>
+                        <option value="Ditolak">Ditolak</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" style="margin-top: 8px;">Simpan Perubahan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
