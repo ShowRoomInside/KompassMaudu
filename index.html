@@ -86,7 +86,7 @@
 
     <!-- VIEW: HOME (HALAMAN UTAMA) -->
     <div id="view-home" class="app-view active flex-grow">
-        <!-- Hero Section (Responsive paddings & text) -->
+        <!-- Hero Section -->
         <header class="relative bg-gradient-to-br from-primary via-emerald-950 to-slate-900 text-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden text-center">
             <div class="max-w-4xl mx-auto relative z-10">
                 <span class="inline-block bg-emerald-800 text-secondary font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full mb-6 border border-yellow-600/30">
@@ -323,7 +323,7 @@
                 </button>
             </div>
 
-            <!-- Tab Navigation (Scrollable on small screens) -->
+            <!-- Tab Navigation -->
             <div class="flex space-x-1 sm:space-x-2 border-b border-slate-200 overflow-x-auto pb-px">
                 <button onclick="switchDashTab('registrants')" id="tab-btn-registrants" class="whitespace-nowrap px-4 py-2.5 sm:px-5 sm:py-3 font-semibold rounded-t-xl bg-white border-t border-x border-slate-200 text-primary text-xs sm:text-sm">Data Pendaftar</button>
                 <button onclick="switchDashTab('settings')" id="tab-btn-settings" class="whitespace-nowrap px-4 py-2.5 sm:px-5 sm:py-3 font-semibold rounded-t-xl hover:bg-white text-slate-600 text-xs sm:text-sm">Pengaturan Lomba</button>
@@ -344,7 +344,7 @@
 
                 <!-- Responsive Table Wrapper -->
                 <div class="overflow-x-auto border border-slate-100 rounded-xl">
-                    <table class="w-full text-left border-collapse min-w-[600px]">
+                    <table class="w-full text-left border-collapse min-w-[700px]">
                         <thead>
                             <tr class="bg-slate-50 border-b border-slate-100 text-slate-500 text-xs sm:text-sm font-semibold">
                                 <th class="p-3 sm:p-4">No.</th>
@@ -396,7 +396,7 @@
             <!-- TAB CONTENT: MANAJEMEN AKUN -->
             <div id="tab-usermgt" class="dash-tab hidden bg-white rounded-2xl shadow-sm p-4 sm:p-6">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Form Tambah / Edit User (Responsive & Dynamic Dual-Mode) -->
+                    <!-- Form Tambah / Edit User -->
                     <div id="usermgt-form-wrapper" class="bg-slate-50 p-4 sm:p-6 rounded-2xl border border-slate-100 h-fit">
                         <h4 id="user-form-title" class="font-bold text-slate-800 mb-4 text-sm sm:text-base">Tambah Pengguna Baru</h4>
                         <form id="user-mgt-form" class="space-y-4">
@@ -414,10 +414,9 @@
                             </div>
                             <div>
                                 <label class="block text-xs font-semibold text-slate-600 mb-1">Otoritas (Role)</label>
-                                <select id="user-new-role" required class="w-full px-3 py-2 border rounded-lg bg-white outline-none text-xs sm:text-sm">
-                                    <option value="User">User</option>
-                                    <option value="Admin">Admin</option>
-                                    <option value="Super Admin">Super Admin</option>
+                                <!-- Ditambahkan class text-slate-900 bg-white untuk menjamin visibilitas drop-down opsi di perangkat mobile -->
+                                <select id="user-new-role" required class="w-full px-3 py-2 border rounded-lg bg-white text-slate-900 outline-none text-xs sm:text-sm">
+                                    <!-- Dynamic options populated natively via JS -->
                                 </select>
                             </div>
                             <div class="flex gap-2">
@@ -455,7 +454,7 @@
         </div>
     </div>
 
-    <!-- MODAL: LOGIN (Responsive width scaling) -->
+    <!-- MODAL: LOGIN -->
     <div id="modal-login" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 hidden">
         <div class="bg-white rounded-2xl shadow-xl max-w-sm w-full overflow-hidden border border-slate-200 mx-auto">
             <div class="bg-primary p-6 text-white text-center relative">
@@ -485,7 +484,7 @@
         </div>
     </div>
 
-    <!-- MODAL: DETAIL PENDAFTAR (Responsive scroll limit) -->
+    <!-- MODAL: DETAIL PENDAFTAR -->
     <div id="modal-detail" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 hidden">
         <div class="bg-white rounded-2xl shadow-xl max-w-xl w-full overflow-hidden border border-slate-200 max-h-[90vh] flex flex-col mx-auto">
             <div class="bg-primary p-6 text-white flex justify-between items-center">
@@ -528,14 +527,13 @@
                     </ul>
                 </div>
 
-                <!-- Google Maps Lokasi (Responsive redirection URL) -->
+                <!-- Google Maps Lokasi -->
                 <div>
                     <h4 class="text-lg font-bold text-white mb-4">Lokasi Madrasah</h4>
                     <div class="w-full h-32 rounded-lg overflow-hidden relative shadow-md">
                         <div class="absolute inset-0 bg-slate-800 flex flex-col justify-center items-center text-center p-3">
                             <i class="fa-solid fa-map-location-dot text-secondary text-2xl mb-2"></i>
                             <p class="text-xs text-slate-300 mb-2">MA Unggulan Darul 'Ulum STEP-2</p>
-                            <!-- Redirection URL provided -->
                             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiEzrbE-K6VAxXNzjgGHcg0C5YQ_BJ6BAgXEAw&url=%2Fmaps%2Fplace%2FMA%2BUnggulan%2BDarul%2BUlum%2BSTEP-2%2BKemenag%2BRI%2B-%2BIDB%2Fdata%3D!4m2!3m1!1s0x0%3A0x6599084c194384f1%3Fsa%3DX%26ved%3D1t%3A2428%26ictx%3D111&usg=AOvVaw0h-x53guMFD36_vbNrA9Os&opi=89978449" 
                                target="_blank" 
                                class="bg-primary text-white font-semibold text-xs px-3 py-1.5 rounded-md hover:bg-emerald-950 transition">
@@ -694,6 +692,12 @@
             renderNewsInterface();
         }
 
+        // SAVE STATE LOCAL & PUSH CLOUD
+        function saveAndSync() {
+            localStorage.setItem('KOMPASS_LOCAL_STATE', JSON.stringify(appState));
+            syncWithSupabase('pull');
+        }
+
         // RENDER DOM ELEMENTS
         function renderPublicInterface() {
             document.getElementById('stat-prizes').innerText = appState.settings.totalPrizePool;
@@ -850,8 +854,6 @@
             updateSyncStatus('syncing');
 
             const regId = `REG-${Date.now().toString().slice(-4)}`;
-            const today = new Date();
-            const dateStr = today.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
 
             const newRegistrant = {
                 id: regId,
@@ -1007,11 +1009,13 @@
 
                 let actionBtnHTML = "";
                 if (currentUser && currentUser.role !== 'User') {
+                    // Tombol hapus ditambahkan khusus untuk Admin & Super Admin
                     actionBtnHTML = `
                         <div class="flex flex-wrap items-center justify-center gap-1.5">
                             <button onclick="viewRegistrantDetail('${r.id}')" class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-200 font-bold transition">Detail</button>
                             <button onclick="changeRegistrantStatus('${r.id}', 'Disetujui')" class="text-xs bg-emerald-600 text-white px-2.5 py-1.5 rounded-lg hover:bg-emerald-700 font-bold transition">Setujui</button>
                             <button onclick="changeRegistrantStatus('${r.id}', 'Ditolak')" class="text-xs bg-rose-600 text-white px-2.5 py-1.5 rounded-lg hover:bg-rose-700 font-bold transition">Tolak</button>
+                            <button onclick="deleteRegistrant('${r.id}')" class="text-xs bg-rose-100 text-rose-700 px-2.5 py-1.5 rounded-lg hover:bg-rose-200 font-bold transition" title="Hapus Berkas Peserta"><i class="fa-solid fa-trash"></i></button>
                         </div>
                     `;
                 } else {
@@ -1033,6 +1037,25 @@
                     </tr>
                 `;
             });
+        }
+
+        // FUNGSI HAPUS PESERTA (SUPABASE INTEGRATION)
+        async function deleteRegistrant(id) {
+            if (currentUser.role === 'User') return;
+            if (confirm(`Apakah Anda yakin ingin menghapus berkas pendaftaran peserta dengan ID: ${id}? Tindakan ini permanen.`)) {
+                updateSyncStatus('syncing');
+                try {
+                    const { error } = await _supabase.from('kompass_registrants').delete().eq('id', id);
+                    if (error) throw error;
+                    
+                    await syncWithSupabase('pull');
+                    renderDashboardRegistrants();
+                    alert("Data peserta berhasil dihapus dari sistem.");
+                } catch (err) {
+                    alert("Gagal menghapus data peserta: " + err.message);
+                    updateSyncStatus('offline');
+                }
+            }
         }
 
         function viewRegistrantDetail(id) {
@@ -1241,19 +1264,17 @@
                 `;
             });
 
-            // Role option limitations on form loading
+            // PERBAIKAN: Menggunakan native Javascript DOM API (new Option) agar drop-down pilihan 
+            // berjalan stabil di iOS / Android mobile browser tanpa bug rendering layout.
             const roleSelect = document.getElementById('user-new-role');
-            roleSelect.innerHTML = '';
+            roleSelect.options.length = 0; // Bersihkan opsi lama dengan aman
+
             if (currentUser.role === 'Super Admin') {
-                roleSelect.innerHTML = `
-                    <option value="User">User</option>
-                    <option value="Admin">Admin</option>
-                    <option value="Super Admin">Super Admin</option>
-                `;
+                roleSelect.add(new Option('User', 'User'));
+                roleSelect.add(new Option('Admin', 'Admin'));
+                roleSelect.add(new Option('Super Admin', 'Super Admin'));
             } else if (currentUser.role === 'Admin') {
-                roleSelect.innerHTML = `
-                    <option value="User">User</option>
-                `;
+                roleSelect.add(new Option('User', 'User'));
             }
         }
 
@@ -1266,16 +1287,20 @@
             
             document.getElementById('user-form-title').innerText = `Edit Pengguna: ${username}`;
             document.getElementById('user-new-username').value = targetUser.username;
-            document.getElementById('user-new-username').disabled = true; // Disable editing primary key
+            document.getElementById('user-new-username').disabled = true; 
             document.getElementById('user-new-password').value = targetUser.password;
             document.getElementById('user-new-fullname').value = targetUser.name;
-            document.getElementById('user-new-role').value = targetUser.role;
 
-            // Restrict changing own role to prevent lockout
+            // Integrasi pemilihan opsi secara aman dan kompatibel di layar seluler
+            const roleSelect = document.getElementById('user-new-role');
+            roleSelect.value = targetUser.role;
+
             if (targetUser.username === currentUser.username) {
-                document.getElementById('user-new-role').disabled = true;
+                roleSelect.disabled = true;
+                roleSelect.classList.add('bg-slate-200', 'cursor-not-allowed');
             } else {
-                document.getElementById('user-new-role').disabled = false;
+                roleSelect.disabled = false;
+                roleSelect.classList.remove('bg-slate-200', 'cursor-not-allowed');
             }
 
             document.getElementById('btn-cancel-edit-user').classList.remove('hidden');
@@ -1286,7 +1311,11 @@
             editingUserTarget = null;
             document.getElementById('user-form-title').innerText = "Tambah Pengguna Baru";
             document.getElementById('user-new-username').disabled = false;
-            document.getElementById('user-new-role').disabled = false;
+            
+            const roleSelect = document.getElementById('user-new-role');
+            roleSelect.disabled = false;
+            roleSelect.classList.remove('bg-slate-200', 'cursor-not-allowed');
+
             document.getElementById('user-mgt-form').reset();
             document.getElementById('btn-cancel-edit-user').classList.add('hidden');
             document.getElementById('btn-submit-user').innerText = "Tambah Akun";
